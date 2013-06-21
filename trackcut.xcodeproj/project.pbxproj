@@ -10,6 +10,8 @@
 		C3CFCDF617706699001D9F8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFCDF517706699001D9F8F /* Foundation.framework */; };
 		C3CFCDF917706699001D9F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CFCDF817706699001D9F8F /* main.m */; };
 		C3CFCDFD17706699001D9F8F /* trackcut.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3CFCDFC17706699001D9F8F /* trackcut.1 */; };
+		C3CFCE05177066C8001D9F8F /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CFCE04177066C8001D9F8F /* GPXParser.m */; };
+		C3CFCE081770699D001D9F8F /* TrackPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CFCE071770699D001D9F8F /* TrackPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		C3CFCDF817706699001D9F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3CFCDFB17706699001D9F8F /* trackcut-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "trackcut-Prefix.pch"; sourceTree = "<group>"; };
 		C3CFCDFC17706699001D9F8F /* trackcut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = trackcut.1; sourceTree = "<group>"; };
+		C3CFCE03177066C8001D9F8F /* GPXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXParser.h; sourceTree = "<group>"; };
+		C3CFCE04177066C8001D9F8F /* GPXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXParser.m; sourceTree = "<group>"; };
+		C3CFCE061770699D001D9F8F /* TrackPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPoint.h; sourceTree = "<group>"; };
+		C3CFCE071770699D001D9F8F /* TrackPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,10 @@
 			children = (
 				C3CFCDF817706699001D9F8F /* main.m */,
 				C3CFCDFC17706699001D9F8F /* trackcut.1 */,
+				C3CFCE03177066C8001D9F8F /* GPXParser.h */,
+				C3CFCE04177066C8001D9F8F /* GPXParser.m */,
+				C3CFCE061770699D001D9F8F /* TrackPoint.h */,
+				C3CFCE071770699D001D9F8F /* TrackPoint.m */,
 				C3CFCDFA17706699001D9F8F /* Supporting Files */,
 			);
 			path = trackcut;
@@ -139,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CFCDF917706699001D9F8F /* main.m in Sources */,
+				C3CFCE05177066C8001D9F8F /* GPXParser.m in Sources */,
+				C3CFCE081770699D001D9F8F /* TrackPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

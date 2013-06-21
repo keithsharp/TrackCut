@@ -7,14 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GPXParser.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        // Should read this from argv
+        NSString *filepath = @"/tmp/SUW.GPX";
+        NSURL *file = [[NSURL alloc] initFileURLWithPath:filepath];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        GPXParser *gpxParser = [[GPXParser alloc] init];
+        if (![gpxParser parseDocumentWithURL:file]) {
+            return 1;
+        }
         
     }
     return 0;
