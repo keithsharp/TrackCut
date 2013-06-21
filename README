@@ -1,0 +1,8 @@
+This is a simple command line tool to cut a large GPX file (<trk> elements) 
+into smaller chunks either by <trkseg> or by the date in the <trkpt>s.
+
+I haven't even got to the parsing of command line options yet, so there are no
+instructions...
+
+Copyright 2013, Keith Sharp <keith.sharp@gmail.com>
+Licenced under the GPLv3.
