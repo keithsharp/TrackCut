@@ -35,9 +35,13 @@
 
 @implementation GPXParser
 
+@synthesize outputDirectory = _outputDirectory;
+
 - (id)init
 {
     if (self = [super init]) {
+        _outputDirectory = @"./";
+        
         // Need to set the locale and timezone as GPX files are assumed to be
         // in UTC.  Applications should update to display in the users locale
         // as necessary.
@@ -58,7 +62,7 @@
         [file closeFile];
         prev = nil;
     }
-    NSString *filePath = [[NSString alloc] initWithFormat:@"/tmp/%d.GPX", ++fileCount];
+    NSString *filePath = [[NSString alloc] initWithFormat:@"%@/%d.GPX", [self outputDirectory], ++fileCount];
     file = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
     
     [file writeData:[@"<?xml version=\"1.0\"?>" dataUsingEncoding:NSUTF8StringEncoding]];

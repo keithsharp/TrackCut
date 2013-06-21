@@ -10,6 +10,8 @@
 
 @interface GPXParser : NSObject <NSXMLParserDelegate>
 
+@property (readwrite, nonatomic) NSString *outputDirectory;
+
 - (BOOL)parseDocumentWithURL:(NSURL *)url;
 
 @end

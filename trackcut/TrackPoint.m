@@ -17,6 +17,8 @@
 
 - (NSString *)description
 {
+	// Hack that overrides NSObject description method so that we can write a
+	// <trkpt> element using %@.
     return [[NSString alloc] initWithFormat:@"<trkpt lat=\"%@>\" lon=\"%@\"><ele>%@</ele><time>%@></time></trkpt>", self.latitude, self.longitude, self.elevation, self.time];
 }
 

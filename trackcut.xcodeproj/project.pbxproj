@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		C3CFCDF217706699001D9F8F /* trackcut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trackcut; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CFCDF517706699001D9F8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C3CFCDF817706699001D9F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3CFCDF817706699001D9F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; usesTabs = 1; };
 		C3CFCDFB17706699001D9F8F /* trackcut-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "trackcut-Prefix.pch"; sourceTree = "<group>"; };
 		C3CFCDFC17706699001D9F8F /* trackcut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = trackcut.1; sourceTree = "<group>"; };
 		C3CFCE03177066C8001D9F8F /* GPXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXParser.h; sourceTree = "<group>"; };
@@ -253,6 +253,7 @@
 				C3CFCE0217706699001D9F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
